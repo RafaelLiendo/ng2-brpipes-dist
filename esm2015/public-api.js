@@ -1,0 +1,12 @@
+/*
+ * Public API Surface of ng2-brpipes
+ */
+export * from './lib/real.pipe';
+export * from './lib/cei.pipe';
+export * from './lib/telefone.pipe';
+export * from './lib/cpf.pipe';
+export * from './lib/cnpj.pipe';
+export * from './lib/cpf-cnpj.pipe';
+export * from './lib/cep.pipe';
+export * from './lib/br-pipes.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nMi1icnBpcGVzLyIsInNvdXJjZXMiOlsicHVibGljLWFwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7R0FFRztBQUNILGNBQWMsaUJBQWlCLENBQUM7QUFDaEMsY0FBYyxnQkFBZ0IsQ0FBQztBQUMvQixjQUFjLHFCQUFxQixDQUFDO0FBQ3BDLGNBQWMsZ0JBQWdCLENBQUM7QUFDL0IsY0FBYyxpQkFBaUIsQ0FBQztBQUNoQyxjQUFjLHFCQUFxQixDQUFDO0FBQ3BDLGNBQWMsZ0JBQWdCLENBQUM7QUFDL0IsY0FBYyx1QkFBdUIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXHJcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBuZzItYnJwaXBlc1xyXG4gKi9cclxuZXhwb3J0ICogZnJvbSAnLi9saWIvcmVhbC5waXBlJztcclxuZXhwb3J0ICogZnJvbSAnLi9saWIvY2VpLnBpcGUnO1xyXG5leHBvcnQgKiBmcm9tICcuL2xpYi90ZWxlZm9uZS5waXBlJztcclxuZXhwb3J0ICogZnJvbSAnLi9saWIvY3BmLnBpcGUnO1xyXG5leHBvcnQgKiBmcm9tICcuL2xpYi9jbnBqLnBpcGUnO1xyXG5leHBvcnQgKiBmcm9tICcuL2xpYi9jcGYtY25wai5waXBlJztcclxuZXhwb3J0ICogZnJvbSAnLi9saWIvY2VwLnBpcGUnO1xyXG5leHBvcnQgKiBmcm9tICcuL2xpYi9ici1waXBlcy5tb2R1bGUnO1xyXG4iXX0=

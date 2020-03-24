@@ -1,0 +1,25 @@
+import { __decorate } from "tslib";
+import { isString, formatCnpj, removeNonDigits } from './utils';
+import { Pipe } from '@angular/core';
+let CnpjPipe = 
+// 99.999.999/9999-99
+class CnpjPipe {
+    transform(value) {
+        if (!isString(value)) {
+            return value;
+        }
+        const onlyDigits = removeNonDigits(value);
+        if (onlyDigits && onlyDigits.length === 14) {
+            return formatCnpj(onlyDigits);
+        }
+        return value;
+    }
+};
+CnpjPipe = __decorate([
+    Pipe({
+        name: 'cnpj'
+    })
+    // 99.999.999/9999-99
+], CnpjPipe);
+export { CnpjPipe };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY25wai5waXBlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmcyLWJycGlwZXMvIiwic291cmNlcyI6WyJsaWIvY25wai5waXBlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUUsUUFBUSxFQUFFLFVBQVUsRUFBRSxlQUFlLEVBQUUsTUFBTSxTQUFTLENBQUM7QUFDaEUsT0FBTyxFQUFFLElBQUksRUFBaUIsTUFBTSxlQUFlLENBQUM7QUFNcEQsSUFBYSxRQUFRO0FBRHJCLHFCQUFxQjtBQUNyQixNQUFhLFFBQVE7SUFDakIsU0FBUyxDQUFDLEtBQVU7UUFDaEIsSUFBSSxDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUMsRUFBRTtZQUNsQixPQUFPLEtBQUssQ0FBQztTQUNoQjtRQUVELE1BQU0sVUFBVSxHQUFHLGVBQWUsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUUxQyxJQUFHLFVBQVUsSUFBSSxVQUFVLENBQUMsTUFBTSxLQUFLLEVBQUUsRUFBRTtZQUN2QyxPQUFPLFVBQVUsQ0FBQyxVQUFVLENBQUMsQ0FBQztTQUNqQztRQUVELE9BQU8sS0FBSyxDQUFDO0lBQ2pCLENBQUM7Q0FDSixDQUFBO0FBZFksUUFBUTtJQUpwQixJQUFJLENBQUM7UUFDRixJQUFJLEVBQUUsTUFBTTtLQUNmLENBQUM7SUFDRixxQkFBcUI7R0FDUixRQUFRLENBY3BCO1NBZFksUUFBUSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGlzU3RyaW5nLCBmb3JtYXRDbnBqLCByZW1vdmVOb25EaWdpdHMgfSBmcm9tICcuL3V0aWxzJztcclxuaW1wb3J0IHsgUGlwZSwgUGlwZVRyYW5zZm9ybSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuQFBpcGUoe1xyXG4gICAgbmFtZTogJ2NucGonXHJcbn0pXHJcbi8vIDk5Ljk5OS45OTkvOTk5OS05OVxyXG5leHBvcnQgY2xhc3MgQ25walBpcGUgaW1wbGVtZW50cyBQaXBlVHJhbnNmb3JtIHtcclxuICAgIHRyYW5zZm9ybSh2YWx1ZTogYW55KTogYW55IHtcclxuICAgICAgICBpZiAoIWlzU3RyaW5nKHZhbHVlKSkge1xyXG4gICAgICAgICAgICByZXR1cm4gdmFsdWU7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBjb25zdCBvbmx5RGlnaXRzID0gcmVtb3ZlTm9uRGlnaXRzKHZhbHVlKTtcclxuXHJcbiAgICAgICAgaWYob25seURpZ2l0cyAmJiBvbmx5RGlnaXRzLmxlbmd0aCA9PT0gMTQpIHtcclxuICAgICAgICAgICAgcmV0dXJuIGZvcm1hdENucGoob25seURpZ2l0cyk7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICByZXR1cm4gdmFsdWU7XHJcbiAgICB9XHJcbn1cclxuIl19

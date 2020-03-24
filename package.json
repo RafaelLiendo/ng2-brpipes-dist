@@ -1,0 +1,39 @@
+{
+  "name": "ng2-brpipes",
+  "version": "9.0.0",
+  "description": "Angular2 pipes for BR types",
+  "author": "Filipe Augusto Lima de Souza",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fals/ng2-brpipes"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ng2",
+    "ng",
+    "angular",
+    "angular2",
+    "angularjs",
+    "pipes",
+    "filters",
+    "library"
+  ],
+  "peerDependencies": {
+    "@angular/common": ">= 2",
+    "@angular/core": ">= 2",
+    "tslib": "^1.10.0"
+  },
+  "optionalDependencies": {
+    "tslib": "^1.10.0"
+  },
+  "main": "bundles/ng2-brpipes.umd.js",
+  "module": "fesm5/ng2-brpipes.js",
+  "es2015": "fesm2015/ng2-brpipes.js",
+  "esm5": "esm5/ng2-brpipes.js",
+  "esm2015": "esm2015/ng2-brpipes.js",
+  "fesm5": "fesm5/ng2-brpipes.js",
+  "fesm2015": "fesm2015/ng2-brpipes.js",
+  "typings": "ng2-brpipes.d.ts",
+  "metadata": "ng2-brpipes.metadata.json",
+  "sideEffects": false
+}
